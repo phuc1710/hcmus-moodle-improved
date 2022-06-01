@@ -13,7 +13,7 @@ chrome.storage.sync.get(["token", "moodleLink"], function (data) {
 
   class Moodle {
     static async getEvents() {   
-      const res = await fetch(`https://fervent-albattani-056c21.netlify.app/.netlify/functions/server/get-events/?wwwroot=${moodleLink}&token=${token}`)
+      const res = await fetch(`https://dynamic-gnome-5153e1.netlify.app/.netlify/functions/server/get-events/?wwwroot=${moodleLink}&token=${token}`)
     
       const data = await res.json()
 
